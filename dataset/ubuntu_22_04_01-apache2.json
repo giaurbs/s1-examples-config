@@ -1,4 +1,5 @@
-logs: [
+{
+  logs: [
   {
     path: "/var/log/apache2/access.log",
     attributes: {parser: "accessLog"}
@@ -7,4 +8,5 @@ logs: [
     path: "/var/log/dmesg",
     attributes: {parser: "systemLog"}
   }
-]
+  ]
+}
