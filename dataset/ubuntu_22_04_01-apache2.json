@@ -1,0 +1,10 @@
+logs: [
+  {
+    path: "/var/log/apache2/access.log",
+    attributes: {parser: "accessLog"}
+  },
+  {
+    path: "/var/log/dmesg",
+    attributes: {parser: "systemLog"}
+  }
+]
