@@ -1,0 +1,19 @@
+{
+  max_log_offset_size: 1048576000,
+
+  logs: [
+  {
+    path: "/var/log/apache2/access.log",
+    attributes: {parser: "accessLog"}
+  },
+  {
+    path: "/var/log/apache2/access.log.*",
+    attributes: {parser: "accessLog"},
+    copy_from_start: "true"
+  },
+  {
+    path: "/var/log/dmesg",
+    attributes: {parser: "systemLog"}
+  }
+  ]
+}
