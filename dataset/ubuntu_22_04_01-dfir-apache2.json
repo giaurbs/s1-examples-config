@@ -4,7 +4,8 @@
   logs: [
   {
     path: "/var/log/apache2/access.log",
-    attributes: {parser: "accessLog"}
+    attributes: {parser: "accessLog"},
+    copy_from_start: "true"
   },
   {
     path: "/var/log/apache2/access.log.*",
