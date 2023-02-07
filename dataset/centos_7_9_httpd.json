@@ -1,0 +1,13 @@
+{
+    logs: [
+    {
+      path: "/var/log/httpd/access_log",
+      attributes: {parser: "accessLog"}
+    },
+    {
+      path: "/var/log/dmesg",
+      attributes: {parser: "systemLog"}
+    }
+    ]
+  }
+  
